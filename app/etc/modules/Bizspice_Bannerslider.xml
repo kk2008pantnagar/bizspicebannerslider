@@ -1,0 +1,16 @@
+<?xml version="1.0"?> 
+
+<!--
+/**
+* Bizspice
+* Created by Kapil Kumar 
+**/
+--> 
+<config>
+    <modules>
+        <Bizspice_Bannerslider>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Bizspice_Bannerslider>
+    </modules>
+</config>

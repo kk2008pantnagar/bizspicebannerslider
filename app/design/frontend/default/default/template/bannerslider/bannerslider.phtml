@@ -1,0 +1,27 @@
+<link media="all" href="<?php echo $this->getSkinUrl('bannerslider/jquery.bxslider.css'); ?>" type="text/css" rel="stylesheet">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<!-- bxSlider Javascript file -->
+<script src="<?php echo $this->getSkinUrl('bannerslider/jquery.bxslider.js'); ?>"></script>
+<!-- bxSlider CSS file -->
+
+<script type="text/javascript">
+$js=jQuery.noConflict();
+$js(document).ready(function(){
+  $js('.bxslider').bxSlider();
+});
+
+</script>
+<ul class="bxslider">
+<?php
+foreach($this->getslides() as $slide)
+{
+?>
+	
+	<li><?php echo $this->pagecontent_toHtml($slide->getData('page_content')); ?></li>
+
+<?php
+}
+
+?>
+				
+</ul>
